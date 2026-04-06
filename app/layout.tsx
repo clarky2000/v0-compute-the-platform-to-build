@@ -21,8 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'COMPUTE - AI Agents for Distributed Computing',
-  description: 'Deploy autonomous AI agents on distributed infrastructure. Offload complex tasks to intelligent workers that run 24/7.',
+  title: 'Universal Computing - IT Support, Cybersecurity & Web Design in Scotland',
+  description: 'Protect your business, grow your online presence, and get expert IT support — all from one trusted Scottish partner.',
   generator: 'v0.app',
 }
 
