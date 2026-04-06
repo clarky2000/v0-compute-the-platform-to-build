@@ -5,27 +5,27 @@ import { useEffect, useRef, useState } from "react";
 const features = [
   {
     number: "01",
-    title: "Autonomous Execution",
-    description: "Deploy AI agents that work independently. They analyze, decide, and execute complex multi-step tasks without human intervention.",
-    stats: { value: "99.7%", label: "task completion" },
+    title: "IT Support & Managed Services",
+    description: "Proactive IT support with modern remote monitoring tools. We fix problems before you notice them, with rapid response SLAs and a dedicated account manager.",
+    stats: { value: "15min", label: "average response" },
   },
   {
     number: "02",
-    title: "Distributed Computing",
-    description: "Offload compute-heavy tasks to our global network. Your agents run on optimized infrastructure across 50+ regions worldwide.",
-    stats: { value: "50+", label: "global regions" },
+    title: "Cybersecurity Protection",
+    description: "From security reviews and staff training to simulated cyber attacks and managed security services. We keep your business protected 24/7.",
+    stats: { value: "100%", label: "of clients protected" },
   },
   {
     number: "03",
-    title: "Multi-Agent Orchestration",
-    description: "Coordinate teams of specialized agents. They communicate, delegate, and collaborate to solve complex problems together.",
-    stats: { value: "1000x", label: "parallel execution" },
+    title: "Website Design & Digital Marketing",
+    description: "High-converting websites, local SEO, social media marketing, and PPC campaigns. We build your online presence and turn visitors into customers.",
+    stats: { value: "5-star", label: "rated agency" },
   },
   {
     number: "04",
-    title: "Secure Sandboxing",
-    description: "Each agent runs in isolated environments. Full audit trails, encrypted execution, and zero data leakage between tasks.",
-    stats: { value: "0", label: "data breaches" },
+    title: "Device Supply & Repair",
+    description: "Secure laptops, PCs, tablets, and mobile phones for your team. Fast professional repairs and refurbishment from our engineering workshop.",
+    stats: { value: "Same-day", label: "repairs available" },
   },
 ];
 
@@ -158,23 +158,23 @@ export function FeaturesSection() {
             <div className="lg:col-span-7">
               <span className="inline-flex items-center gap-3 text-sm font-mono text-muted-foreground mb-6">
                 <span className="w-12 h-px bg-foreground/30" />
-                Capabilities
+                Our Services
               </span>
               <h2
-                className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] transition-all duration-1000 ${
+                className={`text-5xl md:text-6xl lg:text-[96px] font-display tracking-tight leading-[0.95] transition-all duration-1000 ${
                   isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                 }`}
               >
-                Intelligent
+                Everything your business needs.
                 <br />
-                <span className="text-muted-foreground">workers.</span>
+                <span className="text-muted-foreground">One trusted team.</span>
               </h2>
             </div>
             <div className="lg:col-span-5 lg:pb-4">
               <p className={`text-xl text-muted-foreground leading-relaxed transition-all duration-1000 delay-200 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}>
-                Deploy autonomous AI agents that execute complex tasks across distributed infrastructure. No supervision required.
+                From IT support and cybersecurity to web design and device repairs. We handle your technology so you can focus on growing your business.
               </p>
             </div>
           </div>
