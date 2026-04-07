@@ -6,31 +6,31 @@ import { Shield, Lock, Eye, FileCheck } from "lucide-react";
 const securityFeatures = [
   {
     icon: Shield,
-    title: "Isolated execution",
-    description: "Each agent runs in its own secure sandbox.",
+    title: "Managed Security Services",
+    description: "We monitor your systems around the clock and respond to threats before they cause damage.",
     image: "/images/isolated.jpg",
   },
   {
-    icon: Lock,
-    title: "Encrypted memory",
-    description: "Data encrypted at rest and in transit.",
+    icon: Eye,
+    title: "Staff Cyber Training",
+    description: "Your team is your biggest vulnerability. We run simulated attacks and training sessions to keep them sharp.",
     image: "/images/encrypted.jpg",
   },
   {
-    icon: Eye,
-    title: "Full audit trails",
-    description: "Every action logged and inspectable.",
+    icon: FileCheck,
+    title: "Security Reviews & Audits",
+    description: "Full reviews of your current setup with a clear action plan and prioritised recommendations.",
     image: "/images/audit.jpg",
   },
   {
-    icon: FileCheck,
-    title: "Permission boundaries",
-    description: "Principle of least privilege by design.",
+    icon: Lock,
+    title: "Rapid Incident Response",
+    description: "Already been hacked? We respond fast, contain the damage, and get you back online.",
     image: "/images/permissions.jpg",
   },
 ];
 
-const certifications = ["SOC 2", "ISO 27001", "HIPAA", "GDPR"];
+const certifications = ["Cyber Essentials", "GDPR Compliant", "Microsoft Partner", "ISO Aware"];
 
 export function SecuritySection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -71,12 +71,12 @@ export function SecuritySection() {
           </span>
           
           {/* Title — full width */}
-          <h2 className={`text-6xl md:text-7xl lg:text-[128px] font-display tracking-tight leading-[0.9] mb-12 transition-all duration-1000 ${
+          <h2 className={`text-5xl md:text-6xl lg:text-[96px] font-display tracking-tight leading-[0.95] mb-12 transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
           }`}>
-            Autonomous,
+            Powerful protection.
             <br />
-            <span className="text-muted-foreground">not uncontrolled.</span>
+            <span className="text-muted-foreground">Full peace of mind.</span>
           </h2>
           
           {/* Description — below title */}
@@ -84,7 +84,7 @@ export function SecuritySection() {
             isVisible ? "opacity-100" : "opacity-0"
           }`}>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-2xl">
-              Your agents are powerful but constrained. Enterprise-grade security ensures they only do what you allow.
+              Enterprise-grade cybersecurity for Scottish SMEs. We protect your data, your team, and your reputation.
             </p>
           </div>
         </div>

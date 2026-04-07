@@ -174,25 +174,48 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-3 text-sm font-mono text-white/60">
             <span className="w-8 h-px bg-white/30" />
-            Autonomous AI agents for distributed computing
+            Your trusted Scottish IT partner
           </span>
         </div>
         
         {/* Main headline */}
-        <div className="mb-12">
+        <div className="mb-8">
           <h1 
-            className={`text-left text-[clamp(2rem,6vw,7rem)] font-display leading-[0.92] tracking-tight text-white transition-all duration-1000 ${
+            className={`text-left text-[clamp(2rem,5vw,5rem)] font-display leading-[1.05] tracking-tight text-white transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block whitespace-nowrap">Distributed compute,</span>
-            <span className="block whitespace-nowrap">
-              agents that{" "}
-              <span className="relative inline-block">
-                <BlurWord word={words[wordIndex]} trigger={wordIndex} />
-              </span>
-            </span>
+            <span className="block text-balance">IT Support, Cybersecurity & Web Design for Scottish Businesses</span>
           </h1>
+        </div>
+        
+        {/* Subheadline */}
+        <p 
+          className={`text-lg lg:text-xl text-white/70 max-w-xl mb-10 transition-all duration-1000 delay-200 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          Protect your business, grow your online presence, and get expert IT support — all from one trusted Scottish partner.
+        </p>
+        
+        {/* CTA Buttons */}
+        <div 
+          className={`flex flex-wrap gap-4 transition-all duration-1000 delay-300 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          }`}
+        >
+          <a 
+            href="#contact" 
+            className="inline-flex items-center justify-center px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-white/90 transition-colors"
+          >
+            Get a Free IT Review
+          </a>
+          <a 
+            href="#features" 
+            className="inline-flex items-center justify-center px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-colors"
+          >
+            View Our Services
+          </a>
         </div>
         </div>
       </div>
@@ -205,9 +228,9 @@ export function HeroSection() {
       >
         <div className="max-w-[1400px] mx-auto flex items-start gap-10 lg:gap-20">
           {[
-            { value: "3500+", label: "autonomous agents active" },
-            { value: "99.7%", label: "distributed uptime" },
-            { value: "<50ms", label: "execution latency" },
+            { value: "200+", label: "Businesses Supported" },
+            { value: "99.9%", label: "Network Uptime" },
+            { value: "15min", label: "Average Response Time" },
           ].map((stat) => (
             <div key={stat.label} className="flex flex-col gap-2">
               <span className="text-3xl lg:text-4xl font-display text-white">{stat.value}</span>
